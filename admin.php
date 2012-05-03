@@ -27,8 +27,10 @@ class PostBackgroundPluginAdmin {
 		if ( !$post_id ) $post_id = $_POST['post_ID'];
 		if ( !$post_id ) return $post;
 
-		if ( !isset( $_POST['postbackground_noncename'] )
-			|| !wp_verify_nonce( $_POST['postbackground_noncename'], plugin_basename(__FILE__) ) )
+		if ( !isset( $_POST['postbackground_content_noncename'] )
+			|| !wp_verify_nonce( $_POST['postbackground_content_noncename'], plugin_basename(__FILE__) )
+			|| !isset( $_POST['postbackground_body_noncename'] )
+			|| !wp_verify_nonce( $_POST['postbackground_body_noncename'], plugin_basename(__FILE__) ) )
 		{
 			return $post;
 		}
@@ -60,7 +62,7 @@ class PostBackgroundPluginAdmin {
 <?php
 	}
 
-	public function metabox_body( $data ) {
+	public function metabox_body() {
 		$data = $this->getmeta( 'body' );
 		wp_nonce_field( plugin_basename(__FILE__), 'postbackground_body_noncename' ); ?>
 <div>

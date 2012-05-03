@@ -2,7 +2,7 @@
 Tags: post, background, css
 Requires at least: 3.2
 Tested up to: 3.2
-Version: 0.9.0
+Version: 0.9.1
 
 Allows posts and pages to have individual custom backgrounds. Both as body backgrounds and as content backgrounds.
 
