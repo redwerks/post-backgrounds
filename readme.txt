@@ -3,6 +3,8 @@ Tags: post, background, css
 Requires at least: 3.2
 Tested up to: 3.2
 Version: 0.9.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Allows posts and pages to have individual custom backgrounds. Both as body backgrounds and as content backgrounds.
 
