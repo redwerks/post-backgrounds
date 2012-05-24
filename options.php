@@ -15,7 +15,9 @@ class PostBackgroundPluginOptions {
 	}
 
 	public function get_content_selector( $post ) {
-		return ".post.post-{$post->ID}";
+		$selector = ".post.post-{$post->ID}";
+		$selector = apply_filters( 'post_background_content_selector', $selector, $post );
+		return $selector;
 	}
 
 }

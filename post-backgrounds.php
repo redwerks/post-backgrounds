@@ -5,7 +5,7 @@ Plugin URI: https://github.com/redwerks/post-backgrounds
 Description: Allows posts and pages to have individual custom backgrounds. Both as body backgrounds and as content backgrounds.
 Author: Redwerks
 Author URI: http://redwerks.org/
-Version: 0.9.1
+Version: 0.9.2
 License: GPL2+
 
 Copyright © 2012 — Redwerks Systems Inc. (http://redwerks.org/)
