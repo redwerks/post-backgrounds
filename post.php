@@ -26,13 +26,13 @@ class PostBackgroundPluginPost {
 			echo "	background-image: url('" . @$rule['image'] . "');\n";
 		}
 		if ( @$rule['repeat-x'] && @$rule['repeat-y'] ) {
-			echo "	background-repeat: no-repeat;\n";
+			echo "	background-repeat: repeat;\n";
 		} elseif ( @$rule['repeat-x'] ) {
 			echo "	background-repeat: repeat-x;\n";
 		} elseif ( @$rule['repeat-y'] ) {
 			echo "	background-repeat: repeat-y;\n";
 		} else {
-			echo "	background-repeat: repeat;\n";
+			echo "	background-repeat: no-repeat;\n";
 		}
 		if ( @$rule['position'] ) {
 			echo "	background-position: " . @$rule['position'] . ";\n";
