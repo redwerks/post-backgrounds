@@ -47,7 +47,7 @@ class PostBackgroundPluginPost {
 
 		echo "<style type=\"text/css\">\n";
 
-		if ( is_single() ) {
+		if ( $wp_query->is_single() || $wp_query->is_page() ) {
 			$postbackground = get_post_meta( get_the_ID(), 'postbackground', true );
 			$this->rule( 'body', isset( $postbackground['body'] ) ? $postbackground['body'] : array() );
 		}
